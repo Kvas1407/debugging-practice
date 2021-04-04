@@ -23,7 +23,9 @@ window.addEventListener('DOMContentLoaded', function() {
       // If we have selected two cards, see if they match.
       if (selectedCards.length === 2) {
         var card1 = selectedCards[0];
-        var card2 = selectedCards[0];
+
+        //Fix: 2 - Changed the Card array sequence to match the first selected card with the second one
+        var card2 = selectedCards[1];
 
         // If the cards match, add them to the collection of matched cards and
         // apply the correct CSS class.
