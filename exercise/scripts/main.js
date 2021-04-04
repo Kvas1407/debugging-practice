@@ -38,7 +38,9 @@ window.addEventListener('DOMContentLoaded', function() {
         // Regardless of whether or not the cards match, deselect them and reset
         // the collection of matched cards.
         card1.classList.remove('is-selected');
-        card3.classList.remove('is-selected');
+
+         //Fix: 3 - Class name been changed from card3 to card2 to match the card1 with the card2
+        card2.classList.remove('is-selected');
         selectedCards = [];
       }
 
