@@ -58,8 +58,8 @@ window.addEventListener('DOMContentLoaded', function() {
   // - #green
   // - #orange
   // - #red
-  var deckElement = document.querySelector('.Cards');
-  var deckColor = window.location.hashh;
+  var deckElement = document.querySelector('.cards'); //Fix-5 - Letting the cards to get the colour changed based on the user selection
+  var deckColor = window.location.hash.substring(1);
 
   if (deckElement && deckColor) {
     var className = 'cards--' + deckColor;
